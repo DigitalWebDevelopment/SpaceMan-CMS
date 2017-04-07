@@ -1,6 +1,8 @@
 <#if licenseFirst??>
 ${licenseFirst}
 </#if>
+${licensePrefix}        ${Project}
+${licensePrefix?replace(" +$", "", "r")}
 ${licensePrefix}Copyright ${date?date?string("yyyy")} ${organization}.
 ${licensePrefix?replace(" +$", "", "r")}
 ${licensePrefix}        ${orgWebAddr}
