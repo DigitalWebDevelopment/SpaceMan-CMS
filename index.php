@@ -1,14 +1,14 @@
 <?php
 
 /* 
- * Bootstrap file for defining root path and initial directories to require
- * application PSR-4 Autoloader.
+ * Bootstrap file for defining application directory paths, list dependencies,
+ * set application evironment and require the PSR-4 class Autoloader.
  */
 
 // Base directory, directory separator for the file system and autoloader location
 defined('DS') or define('DS', DIRECTORY_SEPARATOR);
 defined('APP_ROOT') or define('APP_ROOT', dirname(__FILE__).DS);
-defined('AUTOLOAD') or define('AUTOLOAD', 'spaceman'.DS.'autoloader');
+defined('AUTOLOAD') or define('AUTOLOAD', 'digiwebdev'.DS.'autoloader');
 
 // Require Autoloader
 require_once APP_ROOT.AUTOLOAD.DS.'autoloader.php';
