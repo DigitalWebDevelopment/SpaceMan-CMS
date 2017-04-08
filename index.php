@@ -13,8 +13,9 @@ defined('AUTOLOAD') or define('AUTOLOAD', 'digiwebdev'.DS.'psr4autoloader');
 // Require Autoloader
 require_once APP_ROOT.AUTOLOAD.DS.'psr4autoloader.php';
 
-use digiwebdev\spaceman\Application as App;
-use digiwebdev\spaceman\cache\ConfigCache as Config;
+
+use digiwebdev\spaceman\application\SpaceMan_CMS as Spaceman;
+use digiwebdev\spaceman\config\Config as Config;
 
 
 // Use this to set the evironment of the appliaction
