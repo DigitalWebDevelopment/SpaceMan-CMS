@@ -8,13 +8,14 @@
 // Base directory, directory separator for the file system and autoloader location
 defined('DS') or define('DS', DIRECTORY_SEPARATOR);
 defined('APP_ROOT') or define('APP_ROOT', dirname(__FILE__).DS);
-defined('AUTOLOAD') or define('AUTOLOAD', 'digiwebdev'.DS.'autoloader');
+defined('AUTOLOAD') or define('AUTOLOAD', 'digiwebdev'.DS.'psr4autoloader');
 
 // Require Autoloader
-require_once APP_ROOT.AUTOLOAD.DS.'autoloader.php';
+require_once APP_ROOT.AUTOLOAD.DS.'psr4autoloader.php';
 
-use spaceman\application\base\Application as App;
-use spaceman\application\base\cache\ConfigCache as Config;
+use digiwebdev\spaceman\Application as App;
+use digiwebdev\spaceman\cache\ConfigCache as Config;
+
 
 // Use this to set the evironment of the appliaction
 // 
