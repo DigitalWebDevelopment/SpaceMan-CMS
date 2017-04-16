@@ -6,6 +6,7 @@ namespace digiwebdev\spaceman\controllers;
  * Config controller class simply store configuration values in a static array
  * to be used by various parts of the application when required
  */
+
 class Config {
     
     /**
