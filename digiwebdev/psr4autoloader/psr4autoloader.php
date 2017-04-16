@@ -48,8 +48,8 @@ define('NS', '\\');
  */
 spl_autoload_register(function ($class) {
 
-    //  Composer default prefix - change to Composers set default vendor directory
-    $prefix = 'vendor/';
+    //  Composer default prefix - change to Composers default vendor directory
+    $prefix = 'vendor';
 
     /* Replace the namespace separator with the directory separator, append
      * with .php
