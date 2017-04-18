@@ -15,7 +15,7 @@ require_once APP_ROOT.AUTOLOAD.DS.'psr4autoloader.php';
 
 
 use digiwebdev\spaceman\application\SpaceMan_CMS as Spaceman;
-use digiwebdev\spaceman\config\Config as Config;
+use digiwebdev\spaceman\controllers\Config as Config;
 
 /*
  * Use this to set the evironment of the appliaction
@@ -36,4 +36,4 @@ Config::set('environment','DEV');
 Config::set('log_file', 'spaceman');
 
 // Start application
-#App::start('init');
+Spaceman::start('init');
