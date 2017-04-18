@@ -20,7 +20,7 @@
  * limitations under the License.
  */
 
-namespace digiwebdev\spaceman;
+namespace digiwebdev\spaceman\controllers;
 
 class Page_Controller {
     
